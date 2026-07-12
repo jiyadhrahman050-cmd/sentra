@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://sentra-5n76.onrender.com";
 
 export const login = async (data) => {
   console.log("Sending login data:", data);
