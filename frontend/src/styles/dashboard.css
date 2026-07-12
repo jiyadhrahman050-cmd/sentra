@@ -1,0 +1,240 @@
+.dashboard-container {
+  width: 100%;
+}
+
+.dashboard-header {
+  margin-bottom: 32px;
+}
+
+.dashboard-title {
+  color: #020817;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 6px;
+  letter-spacing: 0;
+}
+
+.dashboard-subtitle {
+  color: #536078 !important;
+  font-size: 16px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.dashboard-stats {
+  margin-bottom: 36px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #dfe5ef !important;
+  border-radius: 12px;
+  box-shadow: none !important;
+  min-height: 134px;
+}
+
+.stat-card .card-body {
+  padding: 25px 28px;
+}
+
+.stat-label {
+  color: #8490a6 !important;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 18px !important;
+}
+
+.stat-value {
+  color: #020817;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.stat-value-accent {
+  color: #0f766e;
+}
+
+.recent-activity-card {
+  background: #ffffff;
+  border: 1px solid #dfe5ef !important;
+  border-radius: 12px;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+
+.recent-activity-card .card-header {
+  border-bottom: 0 !important;
+  padding: 28px 32px 18px;
+}
+
+.recent-activity-card .card-header h5 {
+  color: #020817;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.activity-link {
+  border: 0;
+  color: #00796b;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+}
+
+.activity-link:hover,
+.activity-link:focus {
+  color: #005f54;
+}
+
+.activity-list {
+  padding: 7px 32px 28px;
+}
+
+.activity-row {
+  display: grid;
+  grid-template-columns: 158px 104px minmax(0, 1fr);
+  align-items: center;
+  min-height: 53px;
+  border-bottom: 1px solid #eef1f5;
+  column-gap: 20px;
+  color: #14213d;
+  font-size: 17px;
+}
+
+.activity-row:last-child {
+  border-bottom: 1px solid #eef1f5;
+}
+
+.activity-time {
+  color: #71809a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.activity-description {
+  color: #14213d;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge {
+  align-self: center;
+  border-radius: 999px;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  justify-self: start;
+  min-width: 96px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: none;
+}
+
+.badge-success {
+  background-color: #dff6f1;
+  color: #00796b;
+}
+
+.badge-info {
+  background-color: #f1e8ff;
+  color: #7b3fb7;
+}
+
+.badge-danger {
+  background-color: #fee2e2;
+  color: #b42318;
+}
+
+.badge-warning {
+  background-color: #fff4d5;
+  color: #8a5a00;
+}
+
+.badge-secondary {
+  background-color: #edf1f7;
+  color: #475569;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3em;
+}
+
+.alert {
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.alert-danger {
+  background-color: #fee2e2;
+  color: #8a1f17;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.text-muted {
+  color: #536078 !important;
+}
+
+@media (max-width: 991px) {
+  .dashboard-header {
+    margin-bottom: 24px;
+  }
+
+  .dashboard-stats {
+    margin-bottom: 28px;
+  }
+
+  .activity-row {
+    grid-template-columns: 150px 100px minmax(220px, 1fr);
+  }
+
+  .activity-list {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .stat-card {
+    min-height: 118px;
+  }
+
+  .stat-card .card-body,
+  .recent-activity-card .card-header,
+  .activity-list {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .recent-activity-card .card-header {
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+
+  .activity-row {
+    grid-template-columns: 145px 96px minmax(240px, 1fr);
+    font-size: 16px;
+  }
+}

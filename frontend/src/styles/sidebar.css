@@ -1,0 +1,26 @@
+.sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.btn-logout {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: #9ca3af;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-logout:hover {
+    background: rgba(255,255,255,.08);
+    color: white;
+}
