@@ -33,6 +33,12 @@ ALLOWED_HOSTS = config(
     cast=lambda v: [host.strip() for host in v.split(",")]
 )
 
+CSRF_TRUSTED_ORIGINS = config(
+    "CSRF_TRUSTED_ORIGINS",
+    default="http://localhost:8000",
+    cast=lambda v: [host.strip() for host in v.split(",")]
+)
+
 
 # Application definition
 
@@ -172,6 +178,8 @@ SPECTACULAR_SETTINGS = {
     },
 }
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
+CORS_ALLOWED_ORIGINS = config(
+    "CORS_ALLOWED_ORIGINS",
+    default="http://localhost:5173",
+    cast=lambda v: [origin.strip() for origin in v.split(",")]
+)
