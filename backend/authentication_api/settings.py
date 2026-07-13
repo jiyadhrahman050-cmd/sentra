@@ -59,7 +59,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "corsheaders.middleware.CorsMiddleware",
 
 
@@ -186,3 +187,7 @@ CORS_ALLOWED_ORIGINS = config(
     cast=lambda v: [origin.strip() for origin in v.split(",")]
 
 )
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
