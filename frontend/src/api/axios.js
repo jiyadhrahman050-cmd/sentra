@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://sentra-5n76.onrender.com/api/",
+  baseURL: "https://sentra-1-lqhm.onrender.com/api/",
 });
 
 api.interceptors.request.use((config) => {
