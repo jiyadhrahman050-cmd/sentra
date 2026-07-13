@@ -182,4 +182,5 @@ CORS_ALLOWED_ORIGINS = config(
     "CORS_ALLOWED_ORIGINS",
     default="http://localhost:5173",
     cast=lambda v: [origin.strip() for origin in v.split(",")]
+    CORS_ALLOW_CREDENTIALS = True
 )
